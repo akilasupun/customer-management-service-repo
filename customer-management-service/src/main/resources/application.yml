@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true  datasource:    url: jdbc:mysql://localhost:3306/customer_info_db
+    password: dumith
+    username: dumith
+    initialization-mode: always
+  application:    name: customer-management-service
+server:  port: 8000
