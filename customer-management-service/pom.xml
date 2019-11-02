@@ -12,7 +12,7 @@
 	<groupId>com.rental</groupId>
 	<artifactId>customer-management-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CustomerService</name>
+	<name>customer-management-service</name>
 	<description>customer management service of the car rental solution</description>
 
 	<properties>
