@@ -1,10 +1,18 @@
 spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true  datasource:    url: jdbc:mysql://localhost:3306/customer_info_db
-    password: dumith
-    username: dumith
-    initialization-mode: always
-  application:    name: customer-management-service
-server:  port: 8000
+  application:
+    name: customer-management-service
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/customer_info_db
+#    password: dumith
+#    username: dumith
+#    initialization-mode: always
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true#  cloud:#    config:#      uri: http://localhost:8899
+server:  port: 8300
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}  
